@@ -10,19 +10,19 @@
       </ul>
     </div>
   <% end %>
-
+    <br> </br>
    <div class="form-group">
     <%= f.input :name, class: "form-control" %>
   </div>
-
+   <br></br>
     <div class="form-group">
-    <%= f.text_area :description, :as => :ckeditor, input_html: {:ckeditor => {:toolbar => 'FULL'}}, class: "form-control" %>
+    <%= f.text_area :description, class: "form-control" %>
   </div>
-
+   <br></br>
   <div class="group">
     <%= f.file_field :image %>
   </div>
-
+<br></br>
   <div class="button">
     <%= f.submit %>
   </div>

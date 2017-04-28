@@ -29,17 +29,18 @@
 
 <p id="notice"><%= notice %></p>
 
-<div class="col-sm-11 col-xs-12 blog-content"><div style="border:6px solid red;float:left;">
+<div class="col-sm-14 col-xs-16 blog-content"><div style="border:6px solid red;float:left;">
 
-<div class="col-sm-11 col-xs-12 blog-content"><%= image_tag @blog.image.url(:medium) %>
+<div class="col-sm-14 col-xs-16 blog-content"><%= image_tag @blog.image.url(:medium) %>
 </div></div></div>
-<h2 class= "text-centre">
+<p><h2 class= "text-left">
   <strong>name:</strong>
-  <%= @blog.name %></h2>
+  <%= @blog.name %></h2></p>
  
 
 <p><h4 class="text-left">
-	<font size="3" color="Teal "><h6>Description:<%= @blog.description %></h6></font>
+     <strong>Description:</strong>
+	<font size="3" color="Teal "><%= @blog.description %></font>
 </p>
 
 
